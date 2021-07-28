@@ -1,20 +1,75 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-img class="img" src="../../assets/img/thera.png"></ion-img>
+          </ion-col> 
+          <ion-col size="6">
+            <p class="name">Olá {{name}}</p>
+          </ion-col>
+          <ion-col size="2">
+            <ion-icon class="icon" name="person-circle-outline" slot="end"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div style=" display: flex;">
+      <p style="position: relative; margin-left: 20%; color:white; font-size: 14pt; font-weight: bold ;">29/06/2021</p>
+      <p style="position: relative; margin-left: 20%;color:white; font-size: 14pt; font-weight: bold ;">17:14:32</p>
+    </div>
+    
+    <p style="text-align: center; color:yellow; font-size: 14pt; font-weight: bold ;">Tempo 07/23/37</p>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button class="buttonSelect">CHEGUEI</ion-button>
+
+          <ion-button class="buttonNotSelect">VOLTEI</ion-button>
+
+          <ion-item lines="none">
+            <ion-label class="subText" position="stacked">DATA</ion-label>
+            <ion-input class="input"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="subText" position="stacked">HORA DO ALMOÇO</ion-label>
+            <ion-input class="input"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="subText" position="stacked">HORA FIM</ion-label>
+            <ion-input class="input"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-button class="buttonNotSelect">FUI ALMOÇAR</ion-button>
+
+          <ion-button class="buttonNotSelect">FUI</ion-button>
+
+          <ion-item lines="none">
+            <ion-label class="subText" position="stacked">HORA INÍCIO</ion-label>
+            <ion-input class="input"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="subText" position="stacked">ALMOÇO FIM</ion-label>
+            <ion-input class="input"></ion-input>
+          </ion-item>
+
+          <ion-item lines="none">
+            <ion-label class="subText" position="stacked">TEMPO</ion-label>
+            <ion-input class="input"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>    
   </div>
 </ion-content>
